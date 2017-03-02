@@ -166,6 +166,16 @@ class GradleFxConvention {
     def sdkAutoInstall(Closure closure) {
         sdkAutoInstall.configure(closure)
     }
+
+    private String outputFolderLocation = "bin-debug"
+
+    String getOutputFolderLocation() {
+        return outputFolderLocation
+    }
+
+    void setOutputFolderLocation(String outputFolderLocation) {
+        this.outputFolderLocation = outputFolderLocation
+    }
     
 }
 

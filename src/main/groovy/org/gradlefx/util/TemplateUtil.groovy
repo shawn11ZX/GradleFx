@@ -61,6 +61,7 @@ class TemplateUtil {
                              .replaceAll(/\$\{useDebugRSLSwfs\}/, {flexConvention.useDebugRSLSwfs.toString()})
                              .replaceAll(/\$\{useApolloConfig\}/, {useApolloConfig})
                              .replaceAll(/\$\{buildDir\}/, {project.buildDir.name})
+                             .replaceAll(/\$\{outputFolderLocation\}/, {flexConvention.outputFolderLocation})
            }
        }
    }
